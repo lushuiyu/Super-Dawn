@@ -1,0 +1,16 @@
+{
+  "name": "shopify-dawn",
+  "version": "1.0.0",
+  "description": "Created based on the Shopify Dawn theme project. Added custom components, tailwindCss and other easy-to-use features.",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss -o ./assets/tailwindbuild.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
