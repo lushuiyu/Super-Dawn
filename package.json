@@ -1,10 +1,10 @@
 {
   "name": "shopify-dawn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Created based on the Shopify Dawn theme project. Added custom components, tailwindCss and other easy-to-use features.",
   "main": "index.js",
   "scripts": {
-    "start": "shopify theme dev & gulp watch & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
+    "start": "gulp init && shopify theme dev & gulp watch & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
     "init": "gulp init",
     "testGulp": "gulp watch & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
     "build": "gulp compressJs & gulp compileSass & npx tailwindcss -o ./assets/tailwindbuild.css --minify",
