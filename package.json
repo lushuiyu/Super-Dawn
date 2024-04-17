@@ -4,11 +4,12 @@
   "description": "Created based on the Shopify Dawn theme project. Added custom components, tailwindCss and other easy-to-use features.",
   "main": "index.js",
   "scripts": {
-    "start": "shopify theme dev & gulp watchSass & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
-    "watchSass": "gulp watchSass",
+    "start": "shopify theme dev & gulp watch & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
+    "init": "gulp init",
+    "testGulp": "gulp watch & npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
+    "build": "gulp compressJs & gulp compileSass & npx tailwindcss -o ./assets/tailwindbuild.css --minify",
     "compileSass": "gulp compileSass & npx tailwindcss -o ./assets/tailwindbuild.css",
-    "buildcss": "npx tailwindcss -o ./assets/tailwindbuild.css --minify",
-    "tailwindwatch": "npx tailwindcss -o ./assets/tailwindbuild.css --watch --minify",
+    "compressJs": "gulp compressJs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
   "dependencies": {
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^9.0.0",
     "sass": "^1.75.0"
   }
